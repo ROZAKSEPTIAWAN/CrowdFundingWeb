@@ -19,5 +19,21 @@ public class webController {
         return "signUp";
     }
     
+    @GetMapping("/forgotPass")
+    public String forgotPass (Model model){
+        return "forgotPass";
+    }
+
+    @GetMapping("/")
+    public String index (Model model){
+        return "index";
+    }
+
+    
+    @GetMapping("/a")
+    public String indexa (Model model){
+        return "fragments/header";
+    }
+    
     
 }
