@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>KUDA (Kumpul Dana) for Research Funding</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
+    <link rel ="stylesheet" type="text/css" href="assets/css/login.css">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/template.css">
+    
+    <link rel="stylesheet" href="assets/css/owl.css">
+</head>
+<body>
+
+     <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logokuda.png" alt="KUDA">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#">Discover</a></li>
+                            <li class="scroll-to-section"><a href="#">FAQ</a></li>
+                            <li>
+                                <div class="gradient-button"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Log In Now</a></div>
+                            </li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="khususH3">  <h3>Payment</h3></div>   
+    <br>
+
+
+    <div class="row">
+        <div class="column">
+            <div class="wrapper fadeInDown">
+                    <div class ="images" >
+                <img src= "assets/images/inbody/meta.png" >
+                <br>
+                <h1> send my fuckin money</h1>
+                <br>
+                        <div class ="processing">
+                            <div class ="processing-bar" data-bar ="50">
+                                Progress Funding  50%
+                            </div>
+                        </div>
+                             <br><br>
+                        <div class ="notesfund" >
+                            <P style="color: black;">
+                            <b>Benefit from this project by fund category</b>
+                                silver : Free shirt and group community<br>
+                                platinum : group community and early 20% product price<br>
+                                gold : private community and get 40% product price<br>
+                            </P>
+                        </div>
+                </div>  
+            </div>
+    </div>
+            <div class="column">
+                <div class="wrapper fadeInDown">
+                    <div id="formContent">
+                    <form>
+                    <P>Choose Your fund Category</P>
+                    <input type="text" id ="Total Dana" class ="fadeIn second" name="Total Dana" ><br>
+                
+                    <P>Choose Your payment method</P>
+                    <input type="text" id ="Cara Penarikan" class ="fadeIn third" name="Cara Penarikan" ><br>
+                    
+                    <p ><input type="checkbox" checked="checked" name="sameadr"> I agree to the terms, risks, and privacy policy from this project
+                    </p>
+                    <br><br>
+                    <P>Summary of payment</P>
+                    <div class ="row"> 
+                        <div class ="column">  
+                            <div class ="pay" >
+                            <input type="text" id ="price" class ="fadeIn third" name="price" placeholder="Rp 100.000"><br>
+                            </div>
+                        </div>
+                        
+                        <div class ="column">
+                            <div class ="pay" > 
+                                <input type ="submit"   class="fadeIn fourth" value="Pay Now" >
+                            </div>                           
+                        </div>
+                    </div>    
+                    </form> 
+                </header>   
+                </div>  
+            </div>         
+        </div>  
+    </div>
+
+
+
+  
+        
+
+            <!-- Scripts -->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/js/owl-carousel.js"></script>
+            <script src="assets/js/animation.js"></script>
+            <script src="assets/js/imagesloaded.js"></script>
+            <script src="assets/js/popup.js"></script>
+            <script src="assets/js/custom.js"></script>
+
+            <script>
+                const processing = document.querySelector('.processing-bar');
+                setTimeout(()=> {
+                    processing.style.opacity =1;
+                    processing.style.width =processing.
+                    getAttribute('data-bar')+'%';
+                },500)
+            </script>
+
+    <!-- ***** Header Area End ***** -->
+</body>
+</html>

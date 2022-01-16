@@ -34,6 +34,33 @@ public class webController {
     public String indexa (Model model){
         return "fragments/header";
     }
+
+    @GetMapping("/dis")
+    public String disbursment (Model model){
+        return "disbursment";
+    }
+    
+    @GetMapping("/settingsAccount")
+    public String settingsA (Model model){
+        return "settingsAccount";
+    }
+
+    @GetMapping("/settingsPayment")
+    public String settingsP (Model model){
+        return "settingsPayment";
+    }
+
+    @GetMapping("/settingsDelete")
+    public String settingsD (Model model){
+        return "deleteaccounts";
+    }
+
+
+
+    @GetMapping("/payment")
+    public String payment (Model model){
+        return "payment";
+    }
     
     
 }
